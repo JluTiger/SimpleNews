@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">SimpleNews</string>
+    <string name="app_name">简易新闻</string>
+    <string name="blog">个人博客地址：https://www.cnblogs.com/jlutiger/</string>
 </resources>
