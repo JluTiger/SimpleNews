@@ -17,6 +17,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -139,6 +140,13 @@ public class MainActivity extends AppCompatActivity {
                     bundle.putString("name","shishang");
                 }
                 newsFragment.setArguments(bundle);
+                return newsFragment;
+            }
+
+            @NonNull
+            @Override
+            public Object instantiateItem(@NonNull ViewGroup container, int position) {
+                NewsFragment newsFragment = (NewsFragment)  super.instantiateItem(container, position);
                 return newsFragment;
             }
 
